@@ -66,7 +66,7 @@ class Dict:
         if not self.engWords or not self.deWords:
             print "<item valid=\"no\">"
             print "<title>'%s' not found</title>" % string.strip(expression)
-            print "<icon>de_en.png</icon>"
+            print "<icon>icon.png</icon>"
             print "</item>"
 
         else:
