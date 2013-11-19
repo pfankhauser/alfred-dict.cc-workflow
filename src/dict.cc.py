@@ -79,7 +79,7 @@ class Dict:
 
             for word_idx in range(minWords):
                 if self.engWords[word_idx] == "\"\"": continue
-                print "<item>"
+                print "<item arg=\"%s\">" % self.engWords[word_idx]
                 print "<title>%s</title>" % self.engWords[word_idx]
                 print "<subtitle>%s</subtitle>" % self.deWords[word_idx]
                 print "<icon>de_en.png</icon>"

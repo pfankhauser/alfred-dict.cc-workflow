@@ -7,7 +7,32 @@
 	<key>connections</key>
 	<dict>
 		<key>A164F0AD-8869-40A1-857F-EB98EA06FECE</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A574133F-9512-48C1-9779-618DDB10ABF0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>92115C83-C47B-453B-ACA6-C786BC5850B5</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>See details on dict.cc</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2A0CCA26-EB96-4442-8166-A6550ECDD1BF</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>See details on linguee.de</string>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Thomas Hirsch</string>
@@ -22,12 +47,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A574133F-9512-48C1-9779-618DDB10ABF0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>t</string>
+				<string>translate</string>
 				<key>runningsubtext</key>
 				<string>Please wait...</string>
 				<key>script</key>
@@ -43,16 +83,67 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>A164F0AD-8869-40A1-857F-EB98EA06FECE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<true/>
+				<key>url</key>
+				<string>http://www.dict.cc/?s={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>92115C83-C47B-453B-ACA6-C786BC5850B5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<true/>
+				<key>url</key>
+				<string>http://www.linguee.de/deutsch-englisch?query={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>2A0CCA26-EB96-4442-8166-A6550ECDD1BF</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>2A0CCA26-EB96-4442-8166-A6550ECDD1BF</key>
+		<dict>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>92115C83-C47B-453B-ACA6-C786BC5850B5</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
 		<key>A164F0AD-8869-40A1-857F-EB98EA06FECE</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>160</real>
+		</dict>
+		<key>A574133F-9512-48C1-9779-618DDB10ABF0</key>
+		<dict>
+			<key>ypos</key>
+			<real>20</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
