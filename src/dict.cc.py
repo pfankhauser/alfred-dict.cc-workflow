@@ -71,6 +71,11 @@ class Dict:
 
         else:
             length, minWords = self.getOutputLength()
+            
+            print "<item>"
+            print "<title>Search for '%s' on dict.cc</title>" % string.strip(expression)
+            print "<icon>icon.png</icon>"
+            print "</item>"
 
             for word_idx in range(minWords):
                 if self.engWords[word_idx] == "\"\"": continue
